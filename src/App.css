@@ -1,0 +1,77 @@
+.con{
+  width: 640px;
+}
+#video-controls{
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+}
+a, input, div { 
+  flex : 0 0 auto;
+  margin: 10px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#play-pause{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#seek-bar{
+  width: 50%;
+}
+
+#volume-bar{
+  width: 8%;
+}
+
+a div{
+  margin : 0;
+}
+/* trial */
+
+input[type='range'] {
+  overflow: hidden;
+  width: 320px;
+  -webkit-appearance: none;
+  background-color: #fff;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 20px;
+  -webkit-appearance: none;
+  color: gray;
+  margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 20px;
+  -webkit-appearance: none;
+  height: 20px;
+  border-radius: 50%;
+  cursor: ew-resize;
+  background: #D3BF0C;
+  box-shadow: -80px 0 0 80px #e5e5e5;
+}
+
+
+input[type="range"]::-moz-range-progress {
+  background-color: #fff; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #fafafa;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #fff; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #fafafa;
+}
